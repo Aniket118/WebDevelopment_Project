@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title> Register pls
+        </title>
+        <script type="text/javascript">
+        function validate(){
+            if(document.MyForm.agree.checked)
+                alert("Form Submitted");
+            else
+                alert("Check form once");
+        }
+            
+        </script>
+        <style type="text/css">
+            h1{
+                color: red;
+                text-align:center;
+            }
+            
+        
+        </style>
+    </head>
+    <body>
+        
+        <h1>Registration Form</h1>
+        <div id="reg-form">
+        
+         <form action =""method="">
+            
+            <label for= "firstname">First Name:</label>
+            <input type="Text" name="first name" placeholder="rampage" required>
+            
+            <label for=" lastname">Last Name:</label>
+            <input type="Text" name="last name" placeholder="rampage" required>
+                
+         </form>
+        </div>
+        
+        <div>
+        <label for="gender-male">Male</label>
+        <input type="radio" name="gender-choice" value="choice-1">
+        <label for="gender-female">Female</label>
+        <input type="radio" name="gender-choice" value="choice-2">
+        </div>
+        
+        <div>
+        <label for="email">Email:</label>
+        <input type="email" name="email" placeholder="rampage@gmail.com">
+        
+         <label for="password">Password:</label>
+        <input type="password" name="password">
+        </div>
+        
+        
+        <div>
+            <form name = "MyForm">
+            <label for="agree">I agree to all the condition of the form </label>
+            <input type="checkbox" name ="agree">
+            <input type="button" value="submit" onClick="validate()"/> 
+            </form>
+
+        </div>
+    </body>
+</html>
